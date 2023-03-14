@@ -1,0 +1,36 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Lógica de Programação Javascript-Array de Objetos</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Lógica de Programação com Javascript - Array de Objetos</h1>
+
+			<div id="output"></div>
+
+			<script>
+			//Mostrar na tela os dados de produtos, contendo quantidade em estoque e preço. Estes dados estarão agrupados em um array de objetos.
+
+			var produtos = [
+				{"nome": "caneta", "preco": 2}, 
+				{"nome": "lápis", "preco": 1.2},
+				{"nome": "borracha", "preco": 0.5}
+			];
+
+			var msg = '';	
+
+			for(var i = 0; i < produtos.length; i++) {
+				console.log(produtos[i].nome);
+
+				msg += "<h2>Produto: "+ produtos[i].nome +"</h2>";
+				msg += "<p>Preco: R$ "+ produtos[i].preco +"</p><br>";
+			}
+
+			document.querySelector('#output').innerHTML = msg;
+			
+			</script>
+			
+		</body>
+	</html>

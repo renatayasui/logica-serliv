@@ -1,0 +1,43 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Lógica de Programação Javascript</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Lógica de Programação com Javascript</h1>
+
+			<script>
+				
+				var salario = prompt('salário');
+				salario = parseInt(salario);
+
+				var percentual;
+
+				if (salario <= 280) {
+					percentual = 20;
+
+				} else if (salario > 280 && salario <= 700) {
+					percentual = 15;
+
+				} else if (salario > 700 && salario <= 1500) {
+					percentual = 10;
+
+				} else if (salario > 1500) {
+					percentual = 5;
+				}
+
+				var aumento = salario * (percentual/100);
+				var novoSalario = salario + aumento;
+
+				alert(
+					"salário antes do reajuste: R$ " + salario + " \n" +
+					"aumento de: " + percentual + "% \n" +
+					"valor do aumento: R$ " + aumento + " \n" +
+					"novo salário: R$ " + novoSalario + " \n"
+				);
+
+			</script>
+		</body>
+	</html>
