@@ -25,16 +25,17 @@
             //i = 0
             //notas[0] = [5,6,4,3]
 
-            msg += '<p>Notas do '+ (i + 1) +' bimestre: '+ notas[i].join(', ') +'</p>'
+            msg += '<p>Notas do '+ (i + 1) +' bimestre: '+ notas[i].join(', ') +'</p>';
 
             var totalBimestre = 0;
+            
             for(var j = 0; j < notas[i].length; j++) {
                 console.log(notas[i][j]);
                 totalBimestre += notas[i][j];
             }
             var mediaBimestre = totalBimestre / notas[i].length;
             mediaAnual += mediaBimestre;
-            msg += '<p>A média do '+ (i + 1) +' bimestre é: '+ mediaBimestre +' </p><hr>'
+            msg += '<p>A média do '+ (i + 1) +' bimestre é: '+ mediaBimestre +' </p><hr>';
             console.log('mediaBimestre', mediaBimestre);
         }
         
