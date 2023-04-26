@@ -11,9 +11,6 @@
     </body>
     
     <script>
-
-        //Obter um array de endereços extraídos da array de alunos. 
-
        /* var alunos = [
            {nome: 'daniel', id: 112233, endereco: 'rua faz de conta 2, ap 3, são paulo SP'},
            {nome: 'josé', id: 112244, endereco: 'rua belezura 5, Sao paulo'},
@@ -38,22 +35,21 @@
            {nome: 'joão', id: 113344, endereco: new Endereco({logradouro: 'rua belezura', n: 20, cidade: 'São Paulo', cep: '22222-222'})},
            {nome: 'maria', id: 114444, endereco: new Endereco({logradouro: 'rua chuchu', n: 1, estado: 'RJ', cep: '22222-222'})},
            {nome: 'ana', id: 114555, endereco: new Endereco({logradouro: 'Av belezura', n: 41, estado: 'SP', cep: '33333-333'})}
-       ]
+        ]
+
+        //Obter um array de endereços extraídos da array de alunos. 
         
-
-       var enderecos = [];
+        var enderecos = [];
        
-       for(i = 0; i < alunos.length; i++) {
+        for(i = 0; i < alunos.length; i++) {
             enderecos[i] = alunos[i].endereco;
-       } 
+        } 
 
-       console.log(enderecos);
+        console.log(enderecos);
         
         var msg = "";
         
-        
         document.querySelector('#output').innerHTML = msg;
-        
         
     </script>
 </html>
