@@ -33,6 +33,7 @@
                 console.log(notas[i][j]);
                 totalBimestre += notas[i][j];
             }
+
             var mediaBimestre = totalBimestre / notas[i].length;
             mediaAnual += mediaBimestre;
             msg += '<p>A média do '+ (i + 1) +' bimestre é: '+ mediaBimestre +' </p><hr>';
@@ -43,7 +44,5 @@
         msg += '<p>A média anual é: '+ mediaAnual + '</p><hr>'
             
         document.querySelector('#output').innerHTML = msg;
-        
-        
     </script>
 </html>
