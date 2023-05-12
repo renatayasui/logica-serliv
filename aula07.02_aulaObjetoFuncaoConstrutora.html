@@ -9,60 +9,61 @@
 			<h1>Lógica de Programação com Javascript - Criar um objeto a partir de uma função construtora</h1>
 
 			<script>
-			//Sintaxe formal
-			var obj = new Object();
-			obj.nome = "meu objeto";
-			obj.funcao = function() {
-				console.log('eu sou um método');
-			}
-
-			console.log(obj.nome);
-			obj.funcao();
-
-			//Sintaxe literal
-			var obj2 = {
-				nome: "meu objeto 2",
-				funcao: function() {
-					console.log("eu sou o método do obj2")
+				//Sintaxe formal
+				var obj = new Object();
+				obj.nome = "meu objeto";
+				obj.funcao = function() {
+					console.log('eu sou um método');
 				}
-			}
 
-			console.log(obj2.nome);
-			obj2.funcao();
+				console.log(obj.nome);
+				obj.funcao();
 
-			//Objetos customizados
-			var endereco1 = {
-				"logradouro": "rua tal",
-				"numero": 2
-			}
+				//Sintaxe literal
+				var obj2 = {
+					nome: "meu objeto 2",
+					funcao: function() {
+						console.log("eu sou o método do obj2");
+					}
+				}
+
+				console.log(obj2.nome);
+				obj2.funcao();
+
+				//Objetos customizados
+				var endereco1 = {
+					"logradouro": "rua tal",
+					"numero": 2
+				}
+
 				var endereco2 = {
-				"logradouro": "rua aquela",
-				"numero": 20
-			}
-				var endereco3 = {
-				"logradouro": "rua essa",
-				"numero": 10
-			}
-
-			var minhaArray = new Array()
-			var hoje = new Date()
-			var obj3 = new Object()
-
-			function Endereco(log, n, cep) {
-				this.logradouro = log;
-				this.n = n;
-				this.cep = cep;
-
-				this.enderecoCompleto = function() {
-					return this.logradouro + ', ' + this.n;
+					"logradouro": "rua aquela",
+					"numero": 20
 				}
-			}
 
-			var endereco1 = new Endereco('rua tal', 2, 12345-456);
-			var endereco2 = new Endereco('rua essa', 10, 45678-987);
+				var endereco3 = {
+					"logradouro": "rua essa",
+					"numero": 10
+				}
 
-			console.log(endereco2.enderecoCompleto());
-			
+				var minhaArray = new Array();
+				var hoje = new Date();
+				var obj3 = new Object();
+
+				function Endereco(log, n, cep) {
+					this.logradouro = log;
+					this.n = n;
+					this.cep = cep;
+
+					this.enderecoCompleto = function() {
+						return this.logradouro + ', ' + this.n;
+					}
+				}
+
+				var endereco1 = new Endereco('rua tal', 2, 12345-456);
+				var endereco2 = new Endereco('rua essa', 10, 45678-987);
+
+				console.log(endereco2.enderecoCompleto());
 			</script>
 	
 		</body>
