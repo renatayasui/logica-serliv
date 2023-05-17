@@ -1,0 +1,20 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Lógica de Programação Javascript</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Lógica de Programação com Javascript - Função Recursiva</h1>
+
+			<script>
+				function dizBla(n) {
+					return (n > 1) ? dizBla(--n) + ' bla' : 'bla';
+				}
+
+				console.log(dizBla(2));
+				console.log(dizBla(5));			
+			</script>
+		</body>
+	</html>
